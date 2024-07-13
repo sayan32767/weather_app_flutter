@@ -1,4 +1,4 @@
-# clima_flutter
+# weather_app_flutter
 
 A new Flutter project.
 
