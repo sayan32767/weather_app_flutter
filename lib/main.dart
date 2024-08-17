@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:clima_flutter/screens/loading_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load();
+  return runApp(MyApp());
+
+}
 
 class MyApp extends StatelessWidget {
   @override
